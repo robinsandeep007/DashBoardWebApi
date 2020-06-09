@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <userSecretsID>Advantage-API-Secrets<UserSecretsId>
+    <UserSecretsId>Advantage-API-gitSecrets</UserSecretsId>
   </PropertyGroup>
 
 
