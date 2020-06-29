@@ -149,6 +149,19 @@
           "lib/netstandard2.0/_._": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Tools.DotNet/2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.App": "2.0.7",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "compile": {
+          "lib/netcoreapp2.0/dotnet-ef.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/dotnet-ef.dll": {}
+        }
+      },
       "Microsoft.Extensions.Caching.Abstractions/3.1.4": {
         "type": "package",
         "dependencies": {
@@ -648,6 +661,33 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Npgsql/4.1.3.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Npgsql.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Npgsql.dll": {}
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL/3.1.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.4",
+          "Microsoft.EntityFrameworkCore.Abstractions": "3.1.4",
+          "Microsoft.EntityFrameworkCore.Relational": "3.1.4",
+          "Npgsql": "4.1.3.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
         }
       },
       "runtime.native.System/4.3.0": {
@@ -1271,10 +1311,10 @@
           }
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+      "System.Runtime.CompilerServices.Unsafe/4.6.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
@@ -1951,6 +1991,25 @@
         "tools/net461/win-x86/ef.exe",
         "tools/netcoreapp2.0/any/ef.dll",
         "tools/netcoreapp2.0/any/ef.runtimeconfig.json"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Tools.DotNet/2.0.3": {
+      "sha512": "iUxWokvgVsFR9qMbvvsXSlq/vcnl+DvPpdDlpPp17wh6XyZyh372AB0xnf6CR0frqPa0xpVQLdvX5xpZvVlKLQ==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.tools.dotnet/2.0.3",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp2.0/dotnet-ef.dll",
+        "lib/netcoreapp2.0/dotnet-ef.runtimeconfig.json",
+        "microsoft.entityframeworkcore.tools.dotnet.2.0.3.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.dotnet.nuspec",
+        "prefercliruntime",
+        "tools/net461/ef.exe",
+        "tools/net461/ef.x86.exe",
+        "tools/netcoreapp2.0/ef.dll",
+        "tools/netcoreapp2.0/ef.runtimeconfig.json"
       ]
     },
     "Microsoft.Extensions.Caching.Abstractions/3.1.4": {
@@ -2811,6 +2870,43 @@
         "newtonsoft.json.10.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "tools/install.ps1"
+      ]
+    },
+    "Npgsql/4.1.3.1": {
+      "sha512": "354pl/Picmt5/AIrm8urFwtxfK4n4NbmfBnLA9yvP8VtILSQF3/sFo3+lGuz+q4iyD18QeNFy0NMNBzsocFVlw==",
+      "type": "package",
+      "path": "npgsql/4.1.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Npgsql.dll",
+        "lib/net461/Npgsql.pdb",
+        "lib/net461/Npgsql.xml",
+        "lib/netcoreapp3.0/Npgsql.dll",
+        "lib/netcoreapp3.0/Npgsql.pdb",
+        "lib/netcoreapp3.0/Npgsql.xml",
+        "lib/netstandard2.0/Npgsql.dll",
+        "lib/netstandard2.0/Npgsql.pdb",
+        "lib/netstandard2.0/Npgsql.xml",
+        "lib/netstandard2.1/Npgsql.dll",
+        "lib/netstandard2.1/Npgsql.pdb",
+        "lib/netstandard2.1/Npgsql.xml",
+        "npgsql.4.1.3.1.nupkg.sha512",
+        "npgsql.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL/3.1.4": {
+      "sha512": "T+BIWO+ceje5d52/sOwwqaU/F4Rm2jAWx5qA3+pUGbzY/ZXG0QbHQsyjyg0k8aef6JTq8FRk3FtRWkocsa1QWQ==",
+      "type": "package",
+      "path": "npgsql.entityframeworkcore.postgresql/3.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
+        "npgsql.entityframeworkcore.postgresql.3.1.4.nupkg.sha512",
+        "npgsql.entityframeworkcore.postgresql.nuspec",
+        "postgresql.png"
       ]
     },
     "runtime.native.System/4.3.0": {
@@ -4891,10 +4987,10 @@
         "version.txt"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/4.5.0": {
-      "sha512": "YrzNWduCDHhUaSRBxHxL11UkM2fD6y8hITHis4/LbQZ6vj3vdRjoH3IoPWWC9uDXK2wHIqn+b5gv1Np/VKyM1g==",
+    "System.Runtime.CompilerServices.Unsafe/4.6.0": {
+      "sha512": "HxozeSlipUK7dAroTYwIcGwKDeOVpQnJlpVaOkBz7CM4TsE5b/tKlQBZecTjh6FzcSbxndYaxxpsBMz+wMJeyw==",
       "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.5.0",
+      "path": "system.runtime.compilerservices.unsafe/4.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4906,13 +5002,11 @@
         "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/uap10.0.16300/_._",
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "ref/uap10.0.16300/_._",
-        "system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -6247,8 +6341,10 @@
       "Microsoft.EntityFrameworkCore >= 3.1.4",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.4",
+      "Microsoft.EntityFrameworkCore.Tools.DotNet >= 2.0.3",
       "Microsoft.EntityFrameworkCore.tools >= 3.1.4",
-      "Microsoft.Extensions.SecretManager.Tools >= 2.0.2"
+      "Microsoft.Extensions.SecretManager.Tools >= 2.0.2",
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 3.1.4"
     ]
   },
   "packageFolders": {
@@ -6307,6 +6403,10 @@
             "target": "Package",
             "version": "[3.1.4, )"
           },
+          "Microsoft.EntityFrameworkCore.Tools.DotNet": {
+            "target": "Package",
+            "version": "[2.0.3, )"
+          },
           "Microsoft.EntityFrameworkCore.tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
@@ -6316,6 +6416,10 @@
           "Microsoft.Extensions.SecretManager.Tools": {
             "target": "Package",
             "version": "[2.0.2, )"
+          },
+          "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "target": "Package",
+            "version": "[3.1.4, )"
           }
         },
         "imports": [
